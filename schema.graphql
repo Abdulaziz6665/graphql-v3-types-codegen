@@ -1,0 +1,14 @@
+type Book {
+    id: String!
+    name: String
+  }
+
+  type User {
+    id: String!
+    name: Boolean
+    book: [Book]
+  }
+
+  type Query {
+    hello(id: ID!): User
+  }
