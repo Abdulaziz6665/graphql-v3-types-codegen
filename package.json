@@ -4,6 +4,8 @@
   "description": "AAA",
   "main": "index.ts",
   "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
     "dev": "ts-node-dev --respawn --transpile-only ./index.ts",
     "codegen": "graphql-codegen --config codegen.yml"
   },
